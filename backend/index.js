@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 8080;
 //initial commit shashini
 // dev branch created
 
-// my commit added new AV -1 
+// my commit added new AV -2
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log("✅ Connected to DB");
