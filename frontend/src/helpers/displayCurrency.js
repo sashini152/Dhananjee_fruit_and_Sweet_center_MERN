@@ -5,7 +5,7 @@ const displayINRCurrency = (num) => {
         minimumFractionDigits : 2
     })
 
-    return formatter.format(num)
+    return formatter.format(num).replace('₹', 'Rs.');
 
 }
 

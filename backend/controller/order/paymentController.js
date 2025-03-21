@@ -24,7 +24,7 @@ const paymentController = async (req, res) => {
             line_items: cartItems.map(item => ({
                 price_data: {
                     currency: 'inr',
-                    product_data: {
+                    product_data: { 
                         name: item.productId.productName,
                         images: item.productId.productImage,
                         metadata: {
