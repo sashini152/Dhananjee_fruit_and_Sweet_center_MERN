@@ -8,7 +8,6 @@ const AdminPanel = () => {
     const user = useSelector(state => state?.user?.user)
     const navigate = useNavigate()
 
-
     useEffect(()=>{
         if(user?.role !== ROLE.ADMIN){
             navigate("/")
@@ -33,11 +32,12 @@ const AdminPanel = () => {
                     <p className='text-sm'>{user?.role}</p>
                 </div>
 
-                 {/***navigation */}       
+                 {/*** Navigation */}       
                 <div>   
                     <nav className='grid p-4'>
                         <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-                        <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All product</Link>
+                        <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
+                        <Link to={"/order"} className='px-2 py-1 hover:bg-slate-100'>See Orders</Link> {/* New Orders Page */}
                     </nav>
                 </div>  
         </aside>
