@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SummaryApi from "../common";
 import moment from "moment";
 
-const displayINRCurrency = (amount) => `₹${parseFloat(amount || 0).toFixed(2)}`;
+const displayINRCurrency = (amount) => `Rs.${parseFloat(amount || 0).toFixed(2)}`;
 
 const OrderPage = () => {
   const [orders, setOrders] = useState([]);
